@@ -1,18 +1,22 @@
 {
-  "dependencies": {
-    "yargs": "^12.0.5"
-  },
   "name": "pseudo-cabeca",
   "description": "[PT] Executar um pseudocódigo utilizado JavaScript",
   "version": "1.0.0",
   "main": "index.js",
   "devDependencies": {},
+  "dependencies": {
+    "yargs": "^12.0.5"
+  },
   "scripts": {
     "test": "Echo \"Nice Test :)\""
   },
   "bin": {
     "pseudo-cabeca": "index.js"
   },
+  "keywords": [
+    "scripts"
+  ],
+  "private": false,
   "repository": {
     "type": "git",
     "url": "git+https://github.com/TiagoDanin/Pseudo-Cabeca.git"
