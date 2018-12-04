@@ -35,13 +35,18 @@ const checkType = (v, _return) => {
 
 code = code
 	.replace(/[\t]*/gmi, '')
+	.replace(/imprimir\((.*)\);/gi, (match, key) => {
+		return `console.log(${key})`
+	}, '')
 	.replace(/\/\*.*\*\//gs, '')
-	.replace(/\sdiv\s/g, '/')
-	.replace(/\smod\s/g, '%')
-	.replace(/se\s*\(/gi, 'if(')
-	.replace(/\)\s*então/gi, ') {')
-	.replace(/\s*senão*\s/gi, '} else {')
-	.replace(/\s*fimse;/gi, '}')
+	.replace(/\sdiv\s/g, ' / ')
+	.replace(/\se\s/g, ' && ')
+	.replace(/\sou\s/g, ' || ')
+	.replace(/\smod\s/g, ' % ')
+	.replace(/se\s*\(/gi, ' if(')
+	.replace(/\)\s*então/gi, ' ) { ')
+	.replace(/\s*senão\s*/gi, ' } else { ')
+	.replace(/\s*fimse;/gi, ' } ')
 	.replace(/in[ií]cio/i, `
 const main = async () => {
 await new Promise((resolve) => setTimeout(
@@ -62,6 +67,9 @@ main().catch((e) => {
 	}, '')
 	.replace(/([\w\d,]*)\s*\<\-(.*);/g, (match, keyA, keyB) => {
 		return `${keyA} = checkType('${keyA}', (${keyB}))`
+	}, '')
+	.replace(/raiz\(([\w\d]*)\)/gi, (match, key) => {
+		return ` Math.sqrt(${key}) `
 	}, '')
 	.replace(/real:([\w\d\s,]*);/g, (match, keys) => {
 		var output = ''
@@ -126,5 +134,6 @@ ${key} = checkType(
 	}, '')
 
 code = help + code
+//console.log(code)
 const result = eval(code)
 console.log(result)
