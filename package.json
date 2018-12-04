@@ -1,7 +1,7 @@
 {
   "name": "pseudo-cabeca",
   "description": "[PT] Executar um pseudocódigo utilizado JavaScript",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "main": "index.js",
   "devDependencies": {},
   "dependencies": {
