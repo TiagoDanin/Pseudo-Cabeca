@@ -1,39 +1,39 @@
 {
-  "name": "pseudo-cabeca",
-  "main": "index.js",
-  "version": "1.1.0",
-  "description": "[PT] Executar um pseudocódigo utilizado JavaScript",
-  "author": {
-    "name": "TiagoDanin",
-    "email": "TiagoDanin@outlook.com",
-    "url": "https://TiagoDanin.github.io"
-  },
-  "license": "MIT",
-  "keywords": [
-    "scripts",
-    "pseudocodigo",
-    "compilation"
-  ],
-  "scripts": {},
-  "private": false,
-  "repository": "https://github.com/TiagoDanin/Pseudo-Cabeca.git",
-  "homepage": "https://TiagoDanin.github.io/Pseudo-Cabeca",
-  "bugs": "https://github.com/TiagoDanin/Pseudo-Cabeca/issues",
-  "github": {
-    "name": "Pseudo-Cabeca",
-    "owner": "TiagoDanin"
-  },
-  "files": [
-    "LICENSE",
-    "README.md",
-    "index.js",
-    "package.json"
-  ],
-  "devDependencies": {},
-  "dependencies": {
-    "yargs": "^12.0.5"
-  },
-  "bin": {
-    "pseudo-cabeca": "index.js"
-  }
+	"name": "pseudo-cabeca",
+	"main": "index.js",
+	"version": "1.1.0",
+	"description": "[PT] Executar um pseudocódigo utilizado JavaScript",
+	"author": {
+		"name": "TiagoDanin",
+		"email": "TiagoDanin@outlook.com",
+		"url": "https://TiagoDanin.github.io"
+	},
+	"license": "MIT",
+	"keywords": [
+		"scripts",
+		"pseudocodigo",
+		"compilation"
+	],
+	"scripts": {},
+	"private": false,
+	"repository": "https://github.com/TiagoDanin/Pseudo-Cabeca.git",
+	"homepage": "https://TiagoDanin.github.io/Pseudo-Cabeca",
+	"bugs": "https://github.com/TiagoDanin/Pseudo-Cabeca/issues",
+	"github": {
+		"name": "Pseudo-Cabeca",
+		"owner": "TiagoDanin"
+	},
+	"files": [
+		"LICENSE",
+		"README.md",
+		"index.js",
+		"package.json"
+	],
+	"devDependencies": {},
+	"dependencies": {
+		"yargs": "^12.0.5"
+	},
+	"bin": {
+		"pseudo-cabeca": "index.js"
+	}
 }
