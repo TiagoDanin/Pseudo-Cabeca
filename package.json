@@ -31,7 +31,7 @@
 	],
 	"devDependencies": {},
 	"dependencies": {
-		"yargs": "^12.0.5"
+		"yargs": "^13.0.0"
 	},
 	"bin": {
 		"pseudo-cabeca": "index.js"
